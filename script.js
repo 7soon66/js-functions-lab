@@ -1,31 +1,31 @@
 /*
-Exercise 9: basicCalculator()
+Exercise 10: calculateGrade()
 
-Create a function named basicCalculator. 
-It should take three arguments: two numbers and a string representing 
-an operation ('add', 'subtract', 'multiply', 'divide'). 
-Perform the provided operation on the two numbers. 
-In operations where the order of numbers is important, 
-treat the first parameter as the first operand and the 
-second parameter as the second operand.
+Define a function called calculateGrade. 
+It should take a numerical score and return the corresponding letter 
+grade (A, B, C, D, F). 
 
-Example: basicCalculator(10, 5, 'subtract') should return 5.
+For example, 90 and above yields an 'A', 80-89 is a 'B', 
+and 70-79 is a 'C', 60-69 is a 'D' and anything lower than a 60 is an 'F'.
+
+Example: calculateGrade(100) should return A.
 
 Complete the exercise in the space below:
 */
-
-const basicCalculator = (num1, num2, operation) => {
-  if (operation == 'add') {
-    return num1 + num2
-  } else if (operation == 'substract') {
-    return num1 - num2
-  } else if (operation == 'multiply') {
-    return num1 * num2
-  } else if (operation == 'divide') {
-    return num1 / num2
+const calculateGrade = (grade) => {
+  if (grade >= 90 && grade <= 100) {
+    return 'A'
+  } else if (grade <= 89 && grade >= 80) {
+    return 'B'
+  } else if (grade <= 79 && grade >= 70) {
+    return 'C'
+  } else if (grade <= 69 && grade >= 60) {
+    return 'D'
+  } else if (grade < 60) {
+    return 'F'
   } else {
-    console.log('sorry you enter a wrong operation change it please!!')
+    return 'you enter a wrong value'
   }
 }
 
-console.log('Exercise 9 Result:', basicCalculator(10, 5, 'multiply'))
+console.log('Exercise 10 Result:', calculateGrade(11))
