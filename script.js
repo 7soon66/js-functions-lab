@@ -1,9 +1,15 @@
-const isAdult = (age) => {
-  if (age >= 18) {
-    return 'adult'
+const isCharAVowl = (vowl) => {
+  if (
+    vowl === 'a' ||
+    vowl === 'e' ||
+    vowl === 'i' ||
+    vowl === 'o' ||
+    vowl === 'u'
+  ) {
+    return 'true'
   } else {
-    return 'minor'
+    return 'false'
   }
 }
 
-console.log('Exercise 2 Result:', isAdult(6))
+console.log('Exercise 3 Result:', isCharAVowl('b'))
