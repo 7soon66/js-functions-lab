@@ -1,9 +1,9 @@
-const maxOfTwoNumbers = (x, y) => {
-  if (x >= y) {
-    return x
+const isAdult = (age) => {
+  if (age >= 18) {
+    return 'adult'
   } else {
-    return y
+    return 'minor'
   }
 }
 
-console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9))
+console.log('Exercise 2 Result:', isAdult(6))
