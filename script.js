@@ -1,17 +1,21 @@
 /*
-Exercise 5: greetUser()
+Exercise 6: maxOfThree()
 
-Define a function called greetUser. It should take a name and a 
-time of day (morning, afternoon, evening) and return a personalized 
-greeting.
+Define a function, maxOfThree. It should accept three numbers 
+and return the largest among them.
 
-Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
+Example: maxOfThree(17, 4, 9) should return 17.
 
 Complete the exercise in the space below:
 */
-
-const greetUser = (name, timeOfDay) => {
-  return 'Good' + ' ' + timeOfDay + ', ' + name
+const maxOfThree = (num1, num2, num3) => {
+  if (num1 > num2 && num1 > num3) {
+    return num1
+  } else if (num2 > num1 && num2 > num3) {
+    return num2
+  } else if (num3 > num1 && num3 > num2) {
+    return num3
+  }
 }
 
-console.log('Exercise 5 Result:', greetUser('Sam', 'morning'))
+console.log('Exercise 6 Result:', maxOfThree(17, 30, 12))
