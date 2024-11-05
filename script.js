@@ -1,21 +1,17 @@
 /*
-Exercise 6: maxOfThree()
+Exercise 7: calculateTip()
 
-Define a function, maxOfThree. It should accept three numbers 
-and return the largest among them.
+Create a function called calculateTip. It should take two arguments: 
+the bill amount and the tip percentage (as a whole number). 
+The function should return the amount of the tip.
 
-Example: maxOfThree(17, 4, 9) should return 17.
+Example: calculateTip(50, 20) should return 10.
 
 Complete the exercise in the space below:
 */
-const maxOfThree = (num1, num2, num3) => {
-  if (num1 > num2 && num1 > num3) {
-    return num1
-  } else if (num2 > num1 && num2 > num3) {
-    return num2
-  } else if (num3 > num1 && num3 > num2) {
-    return num3
-  }
+
+const calculateTip = (billAmount, tepPercantige) => {
+  return billAmount % tepPercantige
 }
 
-console.log('Exercise 6 Result:', maxOfThree(17, 30, 12))
+console.log('Exercise 7 Result:', calculateTip(50, 20))
